@@ -18,7 +18,7 @@ cabal-version:       >=1.10
 library
   c-sources:           cbits/cxxy.cpp
   exposed-modules:     CxxyLib     
-  build-depends:       base >=4.8 && <4.9
+  build-depends:       base
   hs-source-dirs:      src
   default-language:    Haskell2010
 --  extra-libraries:     libstdc++
@@ -32,6 +32,6 @@ executable main
   main-is:             Main.hs
   -- other-modules:       
   -- other-extensions:    
-  build-depends:       base >=4.8 && <4.9, cxxylib, template-haskell
+  build-depends:       base, cxxylib, template-haskell
   hs-source-dirs:      app      
   default-language:    Haskell2010
